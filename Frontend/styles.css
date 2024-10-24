@@ -1,3 +1,4 @@
+/* Body */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -5,18 +6,31 @@ body {
   background-color: #f8f9fa;
 }
 
-header {
-  background-color: #ff6347; /* Color de fondo tipo tomate */
-  color: white;
-  text-align: center;
-  padding: 20px 0;
-}
-
+/* Main */
 main {
   text-align: center;
   padding: 20px;
 }
 
+.main-content {
+  margin-left: 250px;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Header */
+header {
+  background-color: #000000; 
+  color: white;
+  text-align: center;
+  padding: 5px 0;
+}
+
+header p{
+  font-family: 'Italiana', serif;
+}
+
+/* Imágenes */
 .image-container {
   display: flex;
   justify-content: center;
@@ -30,13 +44,15 @@ main {
   border-radius: 8px;
 }
 
+/* Botones */
 .button-container {
   margin-top: 20px;
 }
 
-.button {
+/* Boton 1 */
+.button1 {
   display: inline-block;
-  background-color: #007bff; /* Color del botón */
+  background-color: green;
   color: white;
   padding: 10px 20px;
   text-decoration: none;
@@ -45,14 +61,42 @@ main {
   transition: background-color 0.3s;
 }
 
-.button:hover {
-  background-color: #0056b3; /* Color del botón al pasar el ratón */
+.button1:hover {
+  background-color: green;
+  transform: translateY(-3px);
 }
 
+.button1:focus {
+  outline: none;
+}
+
+/* Boton 2 */
+.button2 {
+  display: inline-block;
+  background-color: red; 
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 4px;
+  margin: 10px;
+  transition: background-color 0.3s;
+}
+
+.button2:hover {
+  background-color: red;
+  transform: translateY(-3px); 
+}
+
+.button2:focus {
+  outline: none; 
+}
+
+/* Footer */
 footer {
   text-align: center;
   margin-top: 20px;
   padding: 10px;
-  background-color: #ff6347; /* Color de fondo tipo tomate */
+  background-color: #000000; /* Color de fondo tipo tomate */
   color: white;
 }
+
