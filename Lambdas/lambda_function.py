@@ -7,9 +7,9 @@ def lambda_handler(event, context):
     
     # Conectar a la base de datos
     mydb = mysql.connector.connect(
-        host="pizzeria.cfwkookqqudl.us-west-2.rds.amazonaws.com",
+        host="pizzeria.c5yu6mecwm0v.eu-west-3.rds.amazonaws.com",
         user="admin",
-        password="adminadmin",
+        password="12345678",
         database="pizzeria"
     )
 
@@ -36,7 +36,7 @@ def lambda_handler(event, context):
         }
 
 def select_users(cursor):
-    cursor.execute("SELECT * FROM usuarios")
+    cursor.execute("SELECT * FROM Usuarios")
     users = cursor.fetchall()
     return {
         'statusCode': 200,
