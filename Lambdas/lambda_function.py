@@ -60,7 +60,7 @@ def insert_user(mydb, cursor, email, nombre, apellido, contrasena):
 
 def login_user(cursor, email, contrasena):
     # Consultar el usuario en la base de datos
-    cursor.execute("SELECT contrasena FROM usuarios WHERE email = %s", (email))
+    cursor.execute("SELECT contrasena FROM usuarios WHERE email = %s", (email,))
     result = cursor.fetchone()
     
     if result:

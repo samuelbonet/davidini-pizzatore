@@ -9,7 +9,7 @@ document.getElementById("user-form").addEventListener("submit", function (e) {
 
   // Crear el objeto que será enviado en la solicitud
   const userData = {
-    operation: "insert",
+    operation: "register",
     email: email,
     nombre: nombre,
     apellido: apellido,
@@ -18,7 +18,7 @@ document.getElementById("user-form").addEventListener("submit", function (e) {
 
   // Hacer la solicitud POST a la función Lambda
   fetch(
-    "https://4q4xda75oq2zwljjtjkooxrnme0fhccm.lambda-url.us-west-2.on.aws/",
+    "https://nmbznwvw6xmadh5ho2oplfpebm0scxba.lambda-url.eu-west-3.on.aws/",
     {
       method: "POST",
       headers: {

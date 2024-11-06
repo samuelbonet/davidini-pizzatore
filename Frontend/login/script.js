@@ -15,7 +15,7 @@ document
 
     try {
       const response = await fetch(
-        "https://4q4xda75oq2zwljjtjkooxrnme0fhccm.lambda-url.us-west-2.on.aws/",
+        "https://nmbznwvw6xmadh5ho2oplfpebm0scxba.lambda-url.eu-west-3.on.aws/",
         {
           method: "POST",
           headers: {
@@ -30,8 +30,8 @@ document
       // Muestra el mensaje de respuesta
       const responseMessage = document.getElementById("responseMessage");
       if (response.ok) {
-        responseMessage.style.color = "green";
-        responseMessage.textContent = data.message; // Mensaje de éxito
+        window.location.href = "../home/home.html"; // Redirige a la página de inicio
+        localStorage.setItem("id_usuario", data.id_usuario); // Guarda el email en el localStorage
       } else {
         responseMessage.style.color = "red";
         responseMessage.textContent = data.message; // Mensaje de error

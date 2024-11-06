@@ -6,13 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menú - Davidini Pizzatore</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="../resources/favicon.png" type="image/png" />
 </head>
 
 <body>
     <header>
-        <h1>Menú de Davidini Pizzatore</h1>
-        <p>Disfruta de nuestras deliciosas pizzas</p>
+        <div class="header-container">
+            <h1>Menú de Davidini Pizzatore</h1>
+            <p>Disfruta de nuestras deliciosas pizzas</p>
+            <button id="viewOrdersButton" class="button">Ver mis pedidos</button>
+        </div>
     </header>
+
+    <div id="ordersModal" class="modal">
+        <div class="modal-content">
+            <span id="closeModal" class="close">&times;</span>
+            <h2>Mis Pedidos</h2>
+            <ul id="ordersList">
+                <!-- Los IDs de los pedidos se cargarán aquí -->
+            </ul>
+        </div>
+    </div>
 
     <main>
         <div id="menuContainer" class="menu-container">
@@ -25,6 +39,7 @@
                 <!-- Aquí se mostrarán los productos del carrito -->
             </ul>
             <p id="cartTotal">Total: $0.00</p>
+            <button id="checkoutButton" class="button">Finalizar Compra</button>
         </section>
     </main>
 
@@ -32,7 +47,7 @@
         <p>&copy; 2024 Davidini Pizzatore. Todos los derechos reservados.</p>
     </footer>
 
-    <script src="menu.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
