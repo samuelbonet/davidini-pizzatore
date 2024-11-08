@@ -13,7 +13,7 @@ body {
 }
 
 header {
-  background-color: #c0392b;
+  background-color: black;
   color: white;
   padding: 20px 0;
   text-align: center;
@@ -64,7 +64,7 @@ header {
 
 .menu-item .price {
   font-weight: bold;
-  color: #c0392b;
+  color: red;
 }
 
 .cart-section {
@@ -91,7 +91,7 @@ header {
 }
 
 .button {
-  background-color: #c0392b;
+  background-color: red;
   color: white;
   border: none;
   border-radius: 5px;
@@ -99,6 +99,7 @@ header {
   font-size: 1em;
   cursor: pointer;
   transition: background-color 0.3s;
+  text-decoration: none;
 }
 
 .button:hover {
@@ -108,7 +109,7 @@ header {
 footer {
   text-align: center;
   padding: 20px 0;
-  background-color: #c0392b;
+  background-color: black;
   color: white;
   position: relative;
   bottom: 0;
@@ -147,4 +148,18 @@ footer {
 
 .close:hover {
   color: #000;
+}
+
+.add-to-cart-button {
+  background-color: #4CAF50; /* Color de fondo */
+  color: white; /* Color del texto */
+  border: none; /* Quita el borde */
+  padding: 10px 20px; /* Añade un poco de padding */
+  font-size: 16px; /* Tamaño del texto */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  border-radius: 5px; /* Redondea las esquinas */
+}
+
+.add-to-cart-button:hover {
+  background-color: #45a049; /* Cambia de color cuando pasas el mouse */
 }

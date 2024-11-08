@@ -18,17 +18,37 @@ main {
   font-family: Arial, sans-serif;
 }
 
-/* Header */
 header {
-  background-color: #000000; 
-  color: white;
-  text-align: center;
-  padding: 5px 0;
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  text-align: left;
+  padding: 20px;
+  background-color: #000000;
 }
 
-header p{
-  font-family: 'Italiana', serif;
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f8f9fa;
 }
+
+.header-img {
+  margin-right: 20px;
+  width: 100px; /* Ajusta el tamaño de la imagen según sea necesario */
+}
+
+.header-text h1,
+.header-text h3 {
+  margin: 0;
+}
+
+.responsive-image {
+  max-width: 100%;
+  height: auto;
+}
+
 
 /* Imágenes */
 .image-container {

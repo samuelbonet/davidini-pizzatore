@@ -55,7 +55,7 @@ input {
 
 button {
   padding: 12px;
-  background-color: #ff6347;
+  background-color: #000000;
   color: white;
   border: none;
   border-radius: 5px;
@@ -66,7 +66,7 @@ button {
 }
 
 button:hover {
-  background-color: #e55335;
+  background-color: green;
 }
 
 #responseMessage {
@@ -110,4 +110,17 @@ button:hover {
   .container {
     padding: 15px;
   }
+}
+
+span a {
+  text-decoration: none; /* Elimina el subrayado */
+  color: inherit; /* Hereda el color del texto del padre o del contexto */
+}
+
+span a:visited {
+  color: inherit; /* Mantiene el color original del enlace después de hacer clic */
+}
+
+span a:active {
+  color: inherit; /* Evita que el color cambie cuando el enlace está activo (haciendo clic) */
 }

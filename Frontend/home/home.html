@@ -12,9 +12,11 @@
 <body>
     <header>
         <div class="header-container">
-            <h1>Menú de Davidini Pizzatore</h1>
-            <p>Disfruta de nuestras deliciosas pizzas</p>
-            <button id="viewOrdersButton" class="button">Ver mis pedidos</button>
+            <h1>Menú Davidini Pizzatore</h1>
+            <p>Disfruta de nuestros deliciosos productos</p><br>
+            <button id="viewOrdersButton" class="button">Mis pedidos 📝</button>
+            <button id="goToHomeButton" class="button">👉🏻 Inicio</button>
+
         </div>
     </header>
 
@@ -27,24 +29,26 @@
             </ul>
         </div>
     </div>
-
-    <main>
-        <div id="menuContainer" class="menu-container">
-            <!-- Aquí se cargará el menú dinámicamente -->
-        </div>
-
-        <section id="cartSection" class="cart-section">
-            <h2>Carrito</h2>
+    <div class="user-welcome">
+        <p>Bienvenido, <span id="userName"></span></p>
+    </div>
+    <main><section id="cartSection" class="cart-section">
+            <h2>Carrito 🛒</h2>
             <ul id="cartItems">
                 <!-- Aquí se mostrarán los productos del carrito -->
             </ul>
             <p id="cartTotal">Total: $0.00</p>
             <button id="checkoutButton" class="button">Finalizar Compra</button>
         </section>
+        <div id="menuContainer" class="menu-container">
+            <!-- Aquí se cargará el menú dinámicamente -->
+        </div>
+
+        
     </main>
 
     <footer>
-        <p>&copy; 2024 Davidini Pizzatore. Todos los derechos reservados.</p>
+        <p>&copy; 2024 Samuel Bonet</p>
     </footer>
 
     <script src="script.js"></script>

@@ -53,7 +53,7 @@ def lambda_handler(event, context):
 
             if id_producto:  # Verificar que el producto tenga id_producto
                 cursor.execute(
-                    "INSERT INTO Pedido_Menu (id_pedido, id_menu, id_producto) VALUES (%s, %s, %s)",
+                    "INSERT INTO Pedido_Menu (id_pedido_menu,id_pedido, id_menu, id_producto) VALUES (%s, %s, %s, %s)",
                     (id_pedido, None, id_producto)
                 )
 

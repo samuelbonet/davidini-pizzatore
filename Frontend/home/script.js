@@ -90,7 +90,7 @@ function finalizePurchase() {
   console.log(purchaseData);
 
   fetch(
-    "",
+    "https://ln53kyrir7juaez3o5kno6wsnq0znouq.lambda-url.eu-west-3.on.aws/",
     {
       method: "POST",
       headers: {
@@ -130,7 +130,7 @@ function loadMenuItems(menuData) {
     /*imageElement.src = (item.imagen || "../resources/pizza-margarita.jpg")
     .replace("pizza-default", `pizza-${item.nombre.toLowerCase().replace(/\s+/g, "-")}`)
     + ".jpg"; // Añadimos la extensión .jpg*/
-    imageElement.src = `../resources/pizza-pepperoni.jpg`; // Cambiar el nombre de imagen según corresponda
+    imageElement.src = `../resources/caja.png`; // Cambiar el nombre de imagen según corresponda
     imageElement.alt = item.nombre;
     imageElement.classList.add("item-image");
     productDiv.appendChild(imageElement);
@@ -194,3 +194,8 @@ function updateCart() {
 document
   .getElementById("checkoutButton")
   .addEventListener("click", finalizePurchase);
+
+  document.getElementById("goToHomeButton").addEventListener("click", function() {
+    window.location.href = "../index.html"; // Redirige al index
+  });
+  
