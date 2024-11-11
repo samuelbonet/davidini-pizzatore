@@ -75,6 +75,7 @@ function fetchOrders(id_usuario) {
 
 // Modificar la función finalizePurchase para incluir "operation": "create"
 function finalizePurchase() {
+  console.log(cartItems[0])
   const id_usuario = localStorage.getItem("id_usuario");
 
   if (!id_usuario) {
@@ -87,7 +88,6 @@ function finalizePurchase() {
     id_usuario: id_usuario,
     cartItems: cartItems,
   };
-  console.log(purchaseData);
 
   fetch(
     "https://ln53kyrir7juaez3o5kno6wsnq0znouq.lambda-url.eu-west-3.on.aws/",
@@ -166,6 +166,7 @@ const cartItems = [];
 function addToCart(item) {
   cartItems.push(item);
   updateCart();
+  console.log(cartItems)
 }
 
 // Función para actualizar la vista del carrito
